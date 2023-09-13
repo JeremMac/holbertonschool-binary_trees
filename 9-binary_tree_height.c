@@ -28,6 +28,7 @@ size_t check_left(const binary_tree_t *tree)
 	}
 
 	binary_tree_height(tree->left);
+	binary_tree_height(tree->right);
 
 	return (height);
 }
@@ -60,6 +61,7 @@ size_t check_right(const binary_tree_t *tree)
 	}
 
 	binary_tree_height(tree->right);
+	binary_tree_height(tree->left);
 
 	return (height);
 }
